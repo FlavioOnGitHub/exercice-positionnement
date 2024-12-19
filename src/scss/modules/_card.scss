@@ -4,8 +4,13 @@
   border-radius: 0.625rem;
 
   .card-img-content {
+    position: relative;
+
     .btn-secondary {
       box-shadow: $box-shadow;
+      position: absolute;
+      right: 15px;
+      top: 15px;
     }
   }
 
@@ -31,4 +36,10 @@
       @include text-base;
     }
   }
+}
+
+.section-title {
+  position: sticky;
+  top: 50px;
+  z-index: 1;
 }
